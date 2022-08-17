@@ -1,6 +1,6 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/* @import url('https://unpkg.com/aos@2.3.1/dist/aos.css'); */
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
 @import './header/header.css';
 @import './home/home.css';
 @import './stock/stock.css';
