@@ -1,0 +1,26 @@
+.gather {
+  padding: 127px 0;
+  background-color: var(--color-block);
+  /* max-width: 1440px; */
+}
+
+.block-row--gather {
+  background-color: #fff;
+}
+
+.block__headlines--gather {
+  margin-bottom: 21px;
+}
+
+.block__title--gather {
+  font-size: 37px;
+}
+
+.block__text--gather {
+  max-width: 209px;
+}
+
+.link-underline--gather::after {
+  width: 92px;
+  background-color: var(--main-color);
+}

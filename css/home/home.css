@@ -1,0 +1,29 @@
+.home {
+  background-image: url('../../img/home/home-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  position: relative;
+}
+
+.home__content {
+  position: absolute;
+  bottom: 30px;
+}
+
+.home__title {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.link-underline--home {
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff !important;
+}
+
+.link-underline--home::after {
+  width: 92px;
+  background-color: #fff;
+}

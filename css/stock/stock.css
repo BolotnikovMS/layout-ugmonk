@@ -1,0 +1,47 @@
+.stock {
+  background-color: var(--color-block);
+}
+
+.stock--min {
+  padding: 9px 0;
+}
+
+.stock--big {
+  padding: 127px 0;
+}
+
+.stock__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.stock__text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn--stock {
+  padding: 5px 16px;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.block-row--stock {
+  background-color: #F7F7F7;
+}
+
+.block__headlines--stock {
+  max-width: 208px;
+  margin-bottom: 33px;
+}
+
+.block__title--stock {
+  font-size: 38px;
+}
+
+.link-underline--stock::after {
+  width: 100px;
+  background-color: var(--main-color);
+}

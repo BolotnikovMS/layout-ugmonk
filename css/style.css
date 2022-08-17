@@ -1,0 +1,157 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* @import url('https://unpkg.com/aos@2.3.1/dist/aos.css'); */
+@import './header/header.css';
+@import './home/home.css';
+@import './stock/stock.css';
+@import './product/product.css';
+@import './shop/shop.css';
+@import './gather/gather.css';
+@import './story/story.css';
+@import './news/news.css';
+@import './footer/footer.css';
+
+:root {
+  --container-width: 1190px;
+  --container-padding: 15px;
+  --main-color: #1A1A1A;
+  --color-block: #CED3CA;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.none {
+  display: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.container-header {
+  max-width: 1255px;
+  padding: 0 var(--container-padding);
+  margin: 0 auto;
+}
+
+.btn {
+  color: #f7f7f7 !important;
+  background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  position: relative;
+  top: 1px;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: #CED3CA !important;
+}
+
+/* Link underline */
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  position: absolute;
+  left: 0;
+  content: '';
+  height: 1px;
+}
+
+.link-underline:hover::after {
+  background-color: #CED3CA;
+}
+
+/* Content block */
+.block-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.block-desc {
+  padding-left: 93px;
+  max-width: 406px;
+}
+
+.block__title {
+  line-height: 46px;
+}
+
+.block__text {
+  font-size: 15px;
+  line-height: 21px;
+  margin-bottom: 33px;
+}
+
+
+.block__links {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* Form */
+.form {
+  padding: 16px 6px;
+  min-width: 420px;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form__input {
+  min-width: 338px;
+  padding: 12px 18px;
+  background-color: #fff;
+  border: 1px solid #242424;
+}
+
+.form__input::placeholder {
+  color: rgba(26, 26, 26, 0.5);
+}
+
+.form__btn {
+  padding: 12px 18px;
+  border: 1px solid #242424;
+  border-left: unset;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.form__btn:hover {
+  background-color: #CED3CA;
+}
+
+.form__btn:active {
+  border-left: 1px solid #242424;
+  transform: scale(1.2);
+}
