@@ -27,3 +27,30 @@
   width: 92px;
   background-color: #fff;
 }
+
+@media (max-width: 1024px) {
+  .home {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home {
+    min-height: 310px;
+  }
+
+  .home__content {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .home__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .link-underline--home::after {
+    width: 85px;
+  }
+}

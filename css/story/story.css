@@ -48,3 +48,41 @@
   object-fit: cover;
   pointer-events: none;
 }
+
+@media (max-width: 1024px) {
+  .story {
+    min-height: 400px;
+  }
+
+  .story__text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story {
+    min-height: 300px;
+  }
+
+  .story__text {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 650px) {
+  .story__text {
+    max-width: 440px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 425px) {
+  .story__text {
+    max-width: 350px;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}

@@ -40,11 +40,14 @@
 
 .product__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 275px);
+  /* grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); */
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  justify-items: center;
   grid-gap: 15px 20px;
 }
 
 .card {
+  max-width: 275px;
   background-color: #fff;
   transition: all 0.2s linear;
 }
@@ -77,8 +80,6 @@
   line-height: 13px;
 }
 
-.card__price {}
-
 .card__price+.card__price {
   margin-left: 5px;
 }
@@ -101,4 +102,105 @@
   padding: 0 56px;
   font-size: 20px;
   line-height: 65px;
+}
+
+@media (max-width: 1024px) {
+  .product {
+    padding: 20px 0 90px;
+  }
+
+
+  .product__filters {
+    padding: 20px 0 35px;
+  }
+
+  .product__cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 15px 10px;
+  }
+
+  .product__btns {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product {
+    padding: 10px 0 45px;
+  }
+
+  .product__filters {
+    padding: 15px 0 25px;
+    column-gap: 40px;
+  }
+
+  .filter__btn {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product__btns {
+    margin-top: 25px;
+  }
+
+  .btn--product {
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product {
+    padding: 10px 0 35px;
+  }
+
+  .product__filters {
+    column-gap: 23px;
+  }
+
+  .filter__btn {
+    font-size: 15px;
+    line-height: 9px;
+  }
+
+  .btn--product {
+    padding: 0 30px;
+    font-size: 17px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 650px) {
+  .product__filters {
+    justify-content: left;
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  product__cards {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-gap: 15px 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product {
+    padding: 10px 0 15px;
+  }
+
+  .card__titles {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .product__btns {
+    margin-top: 20px;
+  }
+
+  .btn--product {
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 40px;
+  }
 }
