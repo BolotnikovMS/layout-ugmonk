@@ -15,4 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('nav--mobile')
     document.body.classList.toggle('no-scroll')
   })
+
+  // Fixing navigation on scroll
+  const headerFixed = (selectorHeader, selectorNextSection, classFixed) => {
+    const header = document.querySelector(selectorHeader)
+    const nextSection = document.querySelector(selectorNextSection)
+    let scrollTop = window.scrollY
+
+    if (scrollTop > header.offsetHeight) {
+      header.classList.add(classFixed)
+      nextSection.style.marginTop = `${header.offsetHeight}px`
+    } else {
+      header.classList.remove(classFixed)
+      nextSection.style.marginTop = `0px`
+    }
+  }
+
+  headerFixed('.header', '.home', 'header-fixed')
+  window.addEventListener('scroll', () => {
+    headerFixed('.header', '.home', 'header-fixed')
+  })
 })

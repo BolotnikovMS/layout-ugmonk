@@ -35,6 +35,8 @@ main {
 }
 
 .no-scroll {
+  height: 100%;
+  position: fixed;
   overflow-y: hidden;
 }
 
